@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Профессиональные автомобильные услуги - техобслуживание, ремонт, диагностика">
+    <title>АвтоПро - Профессиональный сервис для автомобилистов</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="#" class="logo">
+                    <span class="logo-icon">🏁</span>
+                    <span class="logo-text">АвтоПро</span>
+                </a>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#hero" class="nav-link">Главная</a></li>
+                    <li><a href="#services" class="nav-link">Услуги</a></li>
+                    <li><a href="#reviews" class="nav-link">Отзывы</a></li>
+                    <li><a href="#contact" class="nav-link">Контакты</a></li>
+                </ul>
+                <button class="nav-toggle" id="navToggle" aria-label="Открыть меню">
+                    <span class="hamburger"></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content fade-in">
+                <h1 class="hero-title">Ваш автомобиль<br>в надёжных руках</h1>
+                <p class="hero-subtitle">Профессиональное обслуживание и ремонт любой сложности. Более 15 лет опыта работы с автомобилями всех марок.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Записаться на сервис</a>
+                    <a href="#services" class="btn btn-secondary">Наши услуги</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-stats">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item fade-in">
+                        <div class="stat-number">15+</div>
+                        <div class="stat-label">лет опыта</div>
+                    </div>
+                    <div class="stat-item fade-in">
+                        <div class="stat-number">5000+</div>
+                        <div class="stat-label">довольных клиентов</div>
+                    </div>
+                    <div class="stat-item fade-in">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">поддержка</div>
+                    </div>
+                    <div class="stat-item fade-in">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">гарантия качества</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Наши услуги</h2>
+                <p class="section-subtitle">Полный спектр автомобильных услуг от профессионалов</p>
+            </div>
+
+            <!-- Service Tabs -->
+            <div class="service-tabs fade-in">
+                <button class="tab-btn active" data-tab="maintenance">Техобслуживание</button>
+                <button class="tab-btn" data-tab="repair">Ремонт</button>
+                <button class="tab-btn" data-tab="diagnostics">Диагностика</button>
+                <button class="tab-btn" data-tab="tuning">Тюнинг</button>
+            </div>
+
+            <!-- Service Tab Content -->
+            <div class="tab-content active" id="maintenance">
+                <div class="services-grid">
+                    <article class="service-card">
+                        <div class="service-icon">🔧</div>
+                        <h3 class="service-title">Замена масла</h3>
+                        <p class="service-description">Профессиональная замена моторного масла и фильтров с использованием качественных материалов.</p>
+                        <div class="service-price">от 2 500 ₽</div>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">⚙️</div>
+                        <h3 class="service-title">Техосмотр</h3>
+                        <p class="service-description">Комплексная проверка всех систем автомобиля с подробным отчётом о состоянии.</p>
+                        <div class="service-price">от 1 800 ₽</div>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">🛞</div>
+                        <h3 class="service-title">Шиномонтаж</h3>
+                        <p class="service-description">Быстрая замена и балансировка колёс, хранение сезонных шин.</p>
+                        <div class="service-price">от 800 ₽</div>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">🔋</div>
+                        <h3 class="service-title">Замена аккумулятора</h3>
+                        <p class="service-description">Диагностика и замена аккумуляторной батареи с гарантией качества.</p>
+                        <div class="service-price">от 1 200 ₽</div>
+                    </article>
+                </div>
+            </div>
+
+            <div class="tab-content" id="repair">
+                <div class="services-grid">
+                    <article class="service-card">
+                        <div class="service-icon">🔩</div>
+                        <h3 class="service-title">Ремонт двигателя</h3>
+                        <p class="service-description">Капитальный и текущий ремонт двигателей любой сложности.</p>
+                        <div class="service-price">от 15 000 ₽</div>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">🛠️</div>
+                        <h3 class="service-title">Ремонт подвески</h3>
+                        <p class="service-description">Диагностика и восстановление ходовой части автомобиля.</p>
+                        <div class="service-price">от 5 000 ₽</div>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">⚡</div>
+                        <h3 class="service-title">Электрика</h3>
+                        <p class="service-description">Ремонт электрооборудования и бортовой электроники.</p>
+                        <div class="service-price">от 3 500 ₽</div>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">🚗</div>
+                        <h3 class="service-title">Кузовной ремонт</h3>
+                        <p class="service-description">Рихтовка, покраска и восстановление кузова.</p>
+                        <div class="service-price">от 8 000 ₽</div>
+                    </article>
+                </div>
+            </div>
+
+            <div class="tab-content" id="diagnostics">
+                <div class="services-grid">
+                    <article class="service-card">
+                        <div class="service-icon">💻</div>
+                        <h3 class="service-title">Компьютерная диагностика</h3>
+                        <p class="service-description">Полная диагностика всех электронных систем автомобиля.</p>
+                        <div class="service-price">от 1 500 ₽</div>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">🔍</div>
+                        <h3 class="service-title">Диагностика двигателя</h3>
+                        <p class="service-description">Проверка состояния и работоспособности двигателя.</p>
+                        <div class="service-price">от 2 000 ₽</div>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">📊</div>
+                        <h3 class="service-title">Диагностика подвески</h3>
+                        <p class="service-description">Проверка состояния ходовой части на стенде.</p>
+                        <div class="service-price">от 1 200 ₽</div>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">🎯</div>
+                        <h3 class="service-title">Предпродажная диагностика</h3>
+                        <p class="service-description">Комплексная проверка автомобиля перед покупкой.</p>
+                        <div class="service-price">от 3 500 ₽</div>
+                    </article>
+                </div>
+            </div>
+
+            <div class="tab-content" id="tuning">
+                <div class="services-grid">
+                    <article class="service-card">
+                        <div class="service-icon">🚀</div>
+                        <h3 class="service-title">Чип-тюнинг</h3>
+                        <p class="service-description">Увеличение мощности двигателя программными методами.</p>
+                        <div class="service-price">от 12 000 ₽</div>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">🎨</div>
+                        <h3 class="service-title">Стайлинг</h3>
+                        <p class="service-description">Установка обвесов, спойлеров и аэродинамических элементов.</p>
+                        <div class="service-price">от 8 000 ₽</div>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">🔊</div>
+                        <h3 class="service-title">Аудиосистемы</h3>
+                        <p class="service-description">Установка и настройка премиальных аудиосистем.</p>
+                        <div class="service-price">от 15 000 ₽</div>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">💡</div>
+                        <h3 class="service-title">Светотехника</h3>
+                        <p class="service-description">Установка LED-оптики и ксенона.</p>
+                        <div class="service-price">от 6 000 ₽</div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Отзывы наших клиентов</h2>
+                <p class="section-subtitle">Более 5000 довольных автовладельцев доверяют нам свои автомобили</p>
+            </div>
+
+            <div class="reviews-grid">
+                <article class="review-card fade-in">
+                    <div class="review-header">
+                        <div class="review-author">
+                            <div class="author-avatar">АК</div>
+                            <div class="author-info">
+                                <h3 class="author-name">Алексей Ковалёв</h3>
+                                <div class="review-rating">★★★★★</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">Обслуживаюсь здесь уже третий год. Отличный сервис, профессиональные мастера, адекватные цены. Делали капитальный ремонт двигателя - всё на высшем уровне. Рекомендую!</p>
+                    <div class="review-date">15 марта 2026</div>
+                </article>
+
+                <article class="review-card fade-in">
+                    <div class="review-header">
+                        <div class="review-author">
+                            <div class="author-avatar">МС</div>
+                            <div class="author-info">
+                                <h3 class="author-name">Мария Смирнова</h3>
+                                <div class="review-rating">★★★★★</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">Очень довольна работой! Приехала с непонятным стуком в подвеске, быстро нашли проблему и устранили. Ребята объяснили всё понятным языком, без навязывания лишних услуг.</p>
+                    <div class="review-date">10 марта 2026</div>
+                </article>
+
+                <article class="review-card fade-in">
+                    <div class="review-header">
+                        <div class="review-author">
+                            <div class="author-avatar">ДП</div>
+                            <div class="author-info">
+                                <h3 class="author-name">Дмитрий Петров</h3>
+                                <div class="review-rating">★★★★★</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">Лучший автосервис в городе! Сделали чип-тюнинг моему BMW - результат превзошёл все ожидания. Прирост мощности ощутимый, расход не увеличился. Профессионалы своего дела!</p>
+                    <div class="review-date">5 марта 2026</div>
+                </article>
+
+                <article class="review-card fade-in">
+                    <div class="review-header">
+                        <div class="review-author">
+                            <div class="author-avatar">ЕВ</div>
+                            <div class="author-info">
+                                <h3 class="author-name">Елена Волкова</h3>
+                                <div class="review-rating">★★★★★</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">Спасибо за оперативность! Машина сломалась в самый неподходящий момент, позвонила - приняли в этот же день. Быстро устранили неисправность, цены честные. Теперь только к вам!</p>
+                    <div class="review-date">28 февраля 2026</div>
+                </article>
+
+                <article class="review-card fade-in">
+                    <div class="review-header">
+                        <div class="review-author">
+                            <div class="author-avatar">ИГ</div>
+                            <div class="author-info">
+                                <h3 class="author-name">Игорь Григорьев</h3>
+                                <div class="review-rating">★★★★★</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">Отличная диагностика перед покупкой авто. Выявили кучу скрытых проблем, которые продавец утаивал. Сэкономил минимум 150 тысяч. Ребята, вы лучшие!</p>
+                    <div class="review-date">20 февраля 2026</div>
+                </article>
+
+                <article class="review-card fade-in">
+                    <div class="review-header">
+                        <div class="review-author">
+                            <div class="author-avatar">СН</div>
+                            <div class="author-info">
+                                <h3 class="author-name">Сергей Николаев</h3>
+                                <div class="review-rating">★★★★★</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">Регулярно делаю здесь техобслуживание. Всегда вовремя напоминают о необходимых работах, цены стабильные, качество на высоте. Сервис действительно клиентоориентированный!</p>
+                    <div class="review-date">12 февраля 2026</div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Свяжитесь с нами</h2>
+                <p class="section-subtitle">Запишитесь на обслуживание или получите консультацию</p>
+            </div>
+
+            <div class="contact-wrapper">
+                <div class="contact-info fade-in">
+                    <div class="info-card">
+                        <div class="info-icon">📍</div>
+                        <h3 class="info-title">Адрес</h3>
+                        <p class="info-text">г. Москва, ул. Автомобильная, 42<br>Режим работы: Пн-Вс, 08:00-22:00</p>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">📞</div>
+                        <h3 class="info-title">Телефон</h3>
+                        <p class="info-text">
+                            <a href="tel:+74951234567">+7 (495) 123-45-67</a><br>
+                            <a href="tel:+79261234567">+7 (926) 123-45-67</a>
+                        </p>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">✉️</div>
+                        <h3 class="info-title">Email</h3>
+                        <p class="info-text">
+                            <a href="mailto:info@avtopro.ru">info@avtopro.ru</a><br>
+                            <a href="mailto:support@avtopro.ru">support@avtopro.ru</a>
+                        </p>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">💬</div>
+                        <h3 class="info-title">Социальные сети</h3>
+                        <div class="social-links">
+                            <a href="#" class="social-link" aria-label="VK">VK</a>
+                            <a href="#" class="social-link" aria-label="Telegram">Telegram</a>
+                            <a href="#" class="social-link" aria-label="WhatsApp">WhatsApp</a>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form fade-in" id="contactForm" novalidate>
+                    <div class="form-group">
+                        <label for="name" class="form-label">Ваше имя *</label>
+                        <input type="text" id="name" name="name" class="form-input" required>
+                        <span class="form-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone" class="form-label">Телефон *</label>
+                        <input type="tel" id="phone" name="phone" class="form-input" required>
+                        <span class="form-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" name="email" class="form-input">
+                        <span class="form-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="service" class="form-label">Интересующая услуга</label>
+                        <select id="service" name="service" class="form-input">
+                            <option value="">Выберите услугу</option>
+                            <option value="maintenance">Техобслуживание</option>
+                            <option value="repair">Ремонт</option>
+                            <option value="diagnostics">Диагностика</option>
+                            <option value="tuning">Тюнинг</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message" class="form-label">Сообщение</label>
+                        <textarea id="message" name="message" class="form-input" rows="4"></textarea>
+                        <span class="form-error"></span>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-full">Отправить заявку</button>
+
+                    <div class="form-success" id="formSuccess">
+                        <span class="success-icon">✓</span>
+                        Спасибо! Ваша заявка принята. Мы свяжемся с вами в ближайшее время.
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">АвтоПро</h3>
+                    <p class="footer-text">Профессиональный автосервис полного цикла. Мы делаем вашу поездку безопасной и комфортной.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-title">Быстрые ссылки</h3>
+                    <ul class="footer-links">
+                        <li><a href="#services">Услуги</a></li>
+                        <li><a href="#reviews">Отзывы</a></li>
+                        <li><a href="#contact">Контакты</a></li>
+                        <li><a href="#">О компании</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-title">Контакты</h3>
+                    <ul class="footer-links">
+                        <li>г. Москва, ул. Автомобильная, 42</li>
+                        <li><a href="tel:+74951234567">+7 (495) 123-45-67</a></li>
+                        <li><a href="mailto:info@avtopro.ru">info@avtopro.ru</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-title">Режим работы</h3>
+                    <ul class="footer-links">
+                        <li>Понедельник - Воскресенье</li>
+                        <li>08:00 - 22:00</li>
+                        <li>Без выходных</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 АвтоПро. Все права защищены.</p>
+                <div class="footer-legal">
+                    <a href="#">Политика конфиденциальности</a>
+                    <a href="#">Условия использования</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop" aria-label="Наверх">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
